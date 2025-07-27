@@ -13,7 +13,7 @@ DURATION: 4 WEEKS
 MENTOR : NEELA SANTOSH
 
 discription:
-PipelinedProcessor1 is a verilog and 2 is testbench runed in EDA playground.
+PipelinedProcessor1 is a verilog and PipelinedProcessor2 is testbench runed in EDA playground.
        
 The 4-stage pipelined processor implemented here is designed to execute simple instructions like ADD, SUB, and LOAD using a sequential flow of stages: Instruction Fetch (IF), Instruction Decode (ID), Execute (EX), and Write Back (WB). Pipelining allows these stages to work in parallel, improving instruction throughput compared to a single-cycle processor. In our design, instructions are stored in a small instruction memory (instr_mem), and a simple register file (regfile) is used to store the results. Each clock cycle moves the data and control signals forward from one stage to the next using pipeline registers.
 
@@ -26,4 +26,6 @@ Finally, in the Write Back (WB) stage, the result computed in EX is written back
 The testbench (tb_pipeline_processor) verifies this processor design by providing a clock signal with a 10 ns period and a reset signal. The $dumpfile and $dumpvars commands are used to create a dump.vcd file, which allows waveform viewing in EPWave on EDA Playground. The $monitor statement continuously prints the output result with simulation time. When simulated, the pipeline executes the three predefined instructions (ADD 5, SUB 2, LOAD 9) in a pipelined fashion, and the result output changes as each instruction completes its write-back stage.
 OUTPUT:
 
+<img width="1365" height="638" alt="Image" src="https://github.com/user-attachments/assets/e90ce0d8-5ffe-4a56-ba8f-7e80eb9c6180" />
 
+<img width="1328" height="627" alt="Image" src="https://github.com/user-attachments/assets/5d995eaf-5a34-4351-9993-e7c3d4fd8431" />
